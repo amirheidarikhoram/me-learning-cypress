@@ -1,0 +1,30 @@
+.linksContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+
+	& > li {
+		display: block;
+	}
+
+	.linkItem {
+		display: block;
+		border: 1px solid black;
+		border-radius: 8px;
+		padding: 5px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		text-decoration: none;
+		transition: 200ms;
+
+		&:hover,
+		&[data-selected="true"] {
+			transition: 200ms;
+			background-color: black;
+			color: white;
+			cursor: pointer;
+		}
+	}
+}
