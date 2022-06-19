@@ -1,0 +1,35 @@
+.todo {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.info {
+    display: block;
+
+    & > p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .name {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .date {
+        font-size: 14px;
+        color: grey;
+    }
+}
+
+.status {
+	border-left: 3px solid red;
+    align-self: stretch;
+	border-color: red;
+    margin: 2px 0 2px 10px;
+	&[data-status="true"] {
+		border-color: green;
+	}
+}
